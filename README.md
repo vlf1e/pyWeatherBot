@@ -1,0 +1,2 @@
+# pyWeatherBot
+simple python bot
