@@ -3,7 +3,7 @@ import requests
 
 from telebot.types import KeyboardButton, ReplyKeyboardMarkup
 
-bot = telebot.TeleBot('8128132970:AAFF9FrXYcSY3O6dSVfZCphWb1FXEcwEw2A')
+bot = telebot.TeleBot('id')
 
 # Клавиатура для стартового меню
 #Создание кнопок "Дать доступ к местоположению" и "Ввести название города"
@@ -36,7 +36,7 @@ def get_coords(message):
     res = requests.get('http://api.openweathermap.org/geo/1.0/direct', params={ #Отправляем запрос и преобразуем его в json формат
         'q': message.text, #город
         'lang': 'ru', #язык
-        'appid': 'a4cdfe7972c946e9b3b26c0571b79dca' #id для доступа к api
+        'appid': 'id' #id для доступа к api
     }).json()
     try:
         global longitude
